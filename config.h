@@ -69,11 +69,13 @@ static const struct arg args[] = {
     { wifi_perc,      "(%s) | ",      "wlp3s0" },                    
     { netspeed_rx,    "🔻 %s | ",     "wlp3s0" },
     { netspeed_tx,    "🔺 %s | ",     "wlp3s0" },
+    { run_command,    "🔆 %s | ",     "xbacklight -get" },
     { ram_perc,       "🐏 %s | ",     NULL },
     { cpu_perc,       "💻 %s | ",     NULL },
     { run_command,    "🔉 %s | ",     "pamixer --get-volume-human" },
-	{ datetime,       "%s | ",        "📆 %a %e %b %G | ⏰ %r" },
-	{ battery_perc,   "🔋 %s%% ",      "BAT0" },
-	{ battery_state,  "%s |"    ,     "BAT0" },
+    { datetime,       "%s | ",        "📆 %a %e %b %G | ⏰ %r" },
+    { battery_perc,   "🔋 %s%% ",      "BAT0" },
+    { battery_state,  "%s "    ,     "BAT0" },
+    { battery_remaining, "(%s) | ",  "BAT0"},
 
 };
