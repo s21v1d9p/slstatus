@@ -1,65 +1,45 @@
-slstatus - suckless status
-==========================
-slstatus is a suckless status monitor for window managers that use WM_NAME
-(e.g. dwm) or stdin to fill the status bar.
+# slstatus - Lightweight Status Bar for Window Managers
 
+slstatus is a lightweight status monitor for window managers like dwm that fills the status bar with system information.  
 
-Features
---------
-- Battery percentage/state/time left
-- CPU usage
-- CPU frequency
+## Features
+
+- Battery percentage, state, and estimated time remaining
+- CPU usage and frequency   
 - Custom shell commands
-- Date and time
-- Disk status (free storage, percentage, total storage and used storage)
+- Current date and time
+- Disk usage and available storage
 - Available entropy
-- Username/GID/UID
-- Hostname
-- IP address (IPv4 and IPv6)
-- Kernel version
-- Keyboard indicators
-- Keymap
-- Load average
-- Network speeds (RX and TX)
-- Number of files in a directory (hint: Maildir)
-- Memory status (free memory, percentage, total memory and used memory)
-- Swap status (free swap, percentage, total swap and used swap)
+- User, group, and host details
+- IP addresses (IPv4 and IPv6)
+- Kernel version 
+- Keyboard indicators and current keymap
+- System load average
+- Network speeds (RX and TX)   
+- File counts for directories
+- Memory and swap usage
 - Temperature
 - Uptime
 - Volume percentage
-- WiFi signal percentage and ESSID
+- WiFi signal strength and SSID
 
+## Compatibility
 
-Requirements
-------------
-Currently slstatus works on FreeBSD, Linux and OpenBSD.
-In order to build slstatus you need the Xlib header files.
+slstatus works on Linux, FreeBSD, and OpenBSD. It requires Xlib headers to build.
 
+## Installation
 
-Installation
-------------
-Edit config.mk to match your local setup (slstatus is installed into the
-/usr/local namespace by default).
-
-Afterwards enter the following command to build and install slstatus (if
-necessary as root):
+Edit `config.mk` to match your system settings then run:
 
     make clean install
 
+See the man page for usage details. Customize the status bar by editing `config.h`.
 
-Running slstatus
-----------------
-See the man page for details.
+## Upcoming
 
+- v1.0 release coming soon!
+- Development has resumed after long hiatus. 
 
-Configuration
--------------
-slstatus can be customized by creating a custom config.h and (re)compiling the
-source code. This keeps it fast, secure and simple.
+## Summary
 
-
-Upcoming
---------
-
-A release (v1.0) will come soon... ;)
-After a long phase of inactivity, development has been continued!
+slstatus is a lightweight status monitor for hackable window managers like dwm. It displays system stats like CPU, memory, network, temps, and more. Customizable and available on Linux, BSD.
